@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/Home/main"
+  ],
+  "subPackages": [
+  ],
+  "window": {
+  },
+  "tabBar": {
+  }
+}

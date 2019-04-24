@@ -1,0 +1,24 @@
+@white: #fff;
+
+@iphonex: 68px; // iphoneX 底部高出的高度
+
+// 指定宽度，一行文字超出显示 “...”
+.ellipsis(@w: 100%) {
+  width: @w;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 指定宽度，指定行数，文字超出显示 “...”
+.line-clamp(@w: 100%, @line: 2) {
+  width: @w;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+

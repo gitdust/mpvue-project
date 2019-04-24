@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["plugin:vue/strongly-recommended", "airbnb-base"],
+  "plugins": ["vue"],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "no-new": 0,
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": 0,
+    "no-param-reassign": "warn",
+    "import/no-extraneous-dependencies": 0,
+    "consistent-return": "warn",
+    "no-undef": "warn",
+    "prefer-destructuring": "warn",
+    "no-extra-boolean-cast": "warn",
+    "max-len": 0,
+    "vue/require-valid-default-prop": 0,
+    "import/no-named-as-default-member": 0,
+    "camelcase": 1,
+    "prefer-promise-reject-errors": 0,
+    "no-unused-vars": 1,
+    "linebreak-style": [0, "error", "windows"],
+    "vue/max-attributes-per-line": 0
+  },
+  "globals": {
+    "App": true,
+    "Page": true,
+    "wx": true,
+    "getApp": true,
+    "getPage": true,
+    "requirePlugin": true
+  }
+}

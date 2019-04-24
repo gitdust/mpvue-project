@@ -1,0 +1,78 @@
+{
+  "name": "mpvue-frame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./scripts/dev-client",
+    "test": "cross-env NODE_ENV=test node ./scripts/dev-client",
+    "qa": "cross-env NODE_ENV=qa node ./scripts/dev-client",
+    "build": "NODE_ENV=production node ./scripts/dev-client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flyio": "^0.6.9",
+    "mpvue": "^1.0.13",
+    "mpvue-page-factory": "^1.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "copy-webpack-plugin": "4.5.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-vue": "^4.2.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^3.0.1",
+    "fs-extra": "^6.0.1",
+    "glob": "^7.1.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "mpvue-loader": "git+https://github.com/HelloZJW/mpvue-loader.git#patch1.1.x",
+    "mpvue-template-compiler": "^1.0.13",
+    "mpvue-webpack-target": "^1.0.1",
+    "postcss": "^6.0.17",
+    "postcss-loader": "^2.1.0",
+    "postcss-mpvue-wxss": "^1.0.0",
+    "px2rpx-loader": "^0.1.10",
+    "relative": "^3.0.2",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "vue-style-loader": "^4.1.0",
+    "webpack": "3.12.0",
+    "webpack-dev-middleware-hard-disk": "^1.12.1",
+    "webpack-md5-hash": "^0.0.6",
+    "webpack-merge": "^4.1.1",
+    "webpack-mpvue-asset-plugin": "^0.1.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ],
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  }
+}
