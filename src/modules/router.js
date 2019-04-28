@@ -44,6 +44,8 @@ const push = (page, query) => {
     const url = concatUrl(page, query);
     wx.navigateTo({ url });
   }
+  const url = concatUrl(page, query);
+  wx.navigateTo({ url });
 };
 
 const tab = (page, query) => {

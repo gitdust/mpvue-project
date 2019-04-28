@@ -4,8 +4,8 @@ import { END_POINT } from '@/config';
 
 // 请求拦截
 const requestInterceptors = (request) => {
-  // TODO: 添加自定义的一些 http 请求参数等
-  // implement
+  // 添加自定义的一些 http 请求参数等
+  // TODO:implement
 
   return request;
 };
@@ -16,28 +16,31 @@ const responseInterceptors = {
     // 可能是下拉刷新调用接口，那么直接停止下拉刷新动画
     wx.stopPullDownRefresh();
 
-    // TODO: 判断 api 返回内容进行异常提示或错误上报等
-    // implement
+    // 判断 api 返回内容进行异常提示或错误上报等
+    // TODO:implement
     return response;
   },
   error: (error) => {
     wx.stopPullDownRefresh();
 
-    // TODO: 错误提示和上报等
+    // 错误提示和上报等
+    // TODO:implement
 
-    // implement
     const { status, message } = error;
 
     if (status === 0) {
       // 网络异常
+      // TODO:implement
     }
 
     if (status !== 200) {
       // 请求异常
+      // TODO:implement
     }
 
     if (message.indexOf('timeout') > -1) {
       // 请求超时
+      // TODO:implement
     }
 
     throw new Error(error);
