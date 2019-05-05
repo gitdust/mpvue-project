@@ -2,9 +2,13 @@
 
 自己手动配置构建脚本，删减公司内部业务代码，保留核心功能。
 
-请阅读完以下内容再使用。
+请阅读完以下内容再使用。如果觉得可以，请给个 `Star`。
 
-如果觉得可以，请给个 `Star`。
+使用类库：
+
+- [flyio](https://github.com/wendux/fly)
+- [mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)
+
 
 ## 0 目录结构
 
@@ -18,14 +22,6 @@ src
  |---mixin/ // 全局 mixin
  |---modules/ // 对 utils 工具的二次封装
  |---pages/ // 小程序的页面
- |     |---pageName // 页面名称（注意修改）
- |            |---components // 本页面的一些组件
- |            |---api.js // 本页面使用的 api
- |            |---index.vue // 本页面主文件
- |            |---main.js // 本页面入口文件
- |            |---main.json // 本页面配置文件
- |            |---mixin.js // 本页面 mixin
- |            |---store.js // 本页面的 store
  |---shared/ // 业务组件
  |---static/ // 静态资源，图片等
  |---store/ // rootStore
@@ -52,6 +48,8 @@ src
  - 部分方法已经添加至 `Vue.prototype` 上，详见 `src/main.js`
 
  - 处理了运行时代码错误和 `promise` 错误无法在控制台提示的问题
+
+ - 支持分包
 
 
 ## 2 使用

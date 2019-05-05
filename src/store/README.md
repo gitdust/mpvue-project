@@ -37,5 +37,3 @@ const requireContext = require.context('@/pages', true, /^\.\/((?!\/)[\s\S])+\/r
 ```
 
 但是语法报错，应该是配置出错。所以，目前只支持手动引入页面 `store`，添加至 `modules` 字段中，如上例中的 `home`。
-
-> 已经在 `src/main.js` 中挂载至 `Vue.prototype.$store` 属性上
