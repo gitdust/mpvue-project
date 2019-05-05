@@ -1,13 +1,3 @@
-
-// 对象数组，按字段序列化
-export const converArrayToMap = (array, column, value = null) => {
-  const obj = {};
-  array.forEach((d) => {
-    obj[d[column]] = value !== null ? value : d;
-  });
-  return obj;
-};
-
 // 小于 10，补 0, 返回字符串
 export const patchZero = digit => (digit >= 10 ? digit : `0${digit}`);
 

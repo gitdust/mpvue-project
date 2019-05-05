@@ -61,7 +61,8 @@ export default request;
  *
  * const requestInterceptors_1 = request => request;
  * const responseInterceptors_1 = {
- *   response: response => response
+ *   response: response => response,
+ *   error: error => consolo.log('error_1', error),
  * };
  * const request_1 = new Request({
  *   baseURL: END_POINT_1,
@@ -72,6 +73,7 @@ export default request;
  * const requestInterceptors_2 = request => request;
  * const responseInterceptors_2 = {
  *   response: response => response
+ *   error: error => consolo.log('error_2', error),
  * };
  * const request_2 = new Request({
  *   baseURL: END_POINT_2,

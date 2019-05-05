@@ -3,11 +3,11 @@
 </template>
 
 <script>
-
+import api from './api.js';
 import mixin from './mixin.js';
 
 export default {
-  name: 'Purchase',
+  name: 'Home',
   components: {
   },
   mixins: [mixin],
@@ -19,18 +19,15 @@ export default {
   },
   methods: {
   },
-  onPullDownRefresh() {
-    this.refresh();
-  },
-  onReachBottom() {
-    this.loadMore();
-  },
-  onPageScroll() {
-    // const query = wx.createSelectorQuery();
-    // query.select('.spu--list').boundingClientRect();
-    // query.exec((rect) => { this.isNavFixed = (rect[0].top <= 85); });
-  },
+  // onPullDownRefresh() {
+  // },
+  // onReachBottom() {
+  // },
   onShow() {
+  },
+  onHide() {
+  },
+  onUnload() {
   },
 };
 </script>
